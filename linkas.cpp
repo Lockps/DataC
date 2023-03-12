@@ -25,6 +25,7 @@ int main(int argc, char const *argv[])
         printf("Enter 8 for exit\n"); 
         printf("Enter your choice : "); scanf("%d",&choice);
 
+        
         switch (choice)
         {
         case 1 : //stack

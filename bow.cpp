@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct list
+typedef struct list //linked list
 {
     int value; //data
     struct list *link; //link
@@ -47,24 +47,22 @@ int main(int argc, char const *argv[])
 
         case 3 : //show
             p=h; //selection
-            while (p!=NULL)
+            while (p!=NULL) //check untill last node
             {
-                printf("{%d} ",p->value);
-                p=p->link;
+                printf("{%d} ",p->value); //print value
+                p=p->link; //next node
             }
             printf("\n\nShow successful!!\n\n");
             break;
 
         case 4 : //exit
-            printf("Bye!!!\n");
+            printf("Bye!!!\n"); //choice = 4 exit while loop 
             break;        
 
-        default:
+        default: //enter another number
             printf("Enter again!!\n");
             break;
         }
     }
-        
     return 0;
 }
-
